@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Voucher Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="fixed-top">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h5 class="text-white h4">Voucher Calculator</h5>
+        <span class="text-muted"><p >This calculator shows you how much you need to refund per product when you refund a voucher that has to be
+          evenly distributed over the complete order.<br>Be aware of the following things: <br>
+        <ul>
+          <li>Make sure to select if it's a percentage voucher or a voucher for a fixed amount</li>
+          <li>Make sure to enter the right quantity for each product when it's a voucher with a fixed amount</li>
+          <li>The result you receive is the refund amount for one product. Use this in the refund tool. CM will multiply this if the customer bought more than one of this product.</li>
+          <li>Sometimes there might be a very small difference with the total voucher amount because the results were rounded to two numbers after zero.<br>Check if you need to make adjustments before refunding. </li>
+        </ul>
+        </p></span>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+
+  <div class="calculator">
+    <div class="">
+      <form class="" action="index.html" method="post">
+        <p>Percentage: <input id="rd1" type="radio" name="Percentage" value="yes" checked="checked" onclick="hide()"> Yes <input id="rd2" type="radio" name="Percentage" value="no" onclick="show()"> No</p>
+
+      </form>
+      <p id="p">Voucher amount: <input type="number" id="voucherInput" class="inputField3"> %</p>
+    </div>
+
+    <table>
+      <tr>
+        <th>Product price</th>
+        <th id="customTableHeading" class="hidden">Quantity</th>
+        <th>Refund</th>
+      </tr>
+      <tr>
+        <td><input class="inputField" type="number"></td>
+        <td><input class="inputField2 hidden" type="number" value="1"></td>
+        <td><output class="outputField"></output></td>
+      </tr>
+      <tr>
+        <td><input class="inputField" type="number"></td>
+        <td><input class="inputField2 hidden" type="number" value="1"></td>
+        <td><output class="outputField"></output></td>
+      </tr>
+      <tr>
+        <td><input class="inputField" type="number"></td>
+        <td><input class="inputField2 hidden" type="number" value="1"></td>
+        <td><output class="outputField"></output></td>
+      </tr>
+      <tr>
+        <td><input class="inputField" type="number"></td>
+        <td><input class="inputField2 hidden" type="number" value="1"></td>
+        <td><output class="outputField"></output></td>
+      </tr>
+      <tr>
+        <td><input class="inputField" type="number"></td>
+        <td><input class="inputField2 hidden" type="number" value="1"></td>
+        <td><output class="outputField"></output></td>
+      </tr>
+      <tr>
+        <td><input class="inputField" type="number"></td>
+        <td><input class="inputField2 hidden" type="number" value="1"></td>
+        <td><output class="outputField"></output></td>
+      </tr>
+      <tr>
+        <td><input class="inputField" type="number"></td>
+        <td><input class="inputField2 hidden" type="number" value="1"></td>
+        <td><output class="outputField"></output></td>
+      </tr>
+      <tr>
+        <td><input class="inputField" type="number"></td>
+        <td><input class="inputField2 hidden" type="number" value="1"></td>
+        <td><output class="outputField"></output></td>
+      </tr>
+      <tr>
+        <td><input class="inputField" type="number"></td>
+        <td><input class="inputField2 hidden" type="number" value="1"></td>
+        <td><output class="outputField"></output></td>
+      </tr>
+      <tr>
+        <td><input class="inputField" type="number"></td>
+        <td><input class="inputField2 hidden" type="number" value="1"></td>
+        <td><output class="outputField"></output></td>
+      </tr>
+    </table>
+    <br>
+    <div class="buttons">
+      <button type="button" onclick="calc()" name="button" class="btn btn-info">Calculate</button><button onclick="reset()" type="button" name="button" class="btn btn-info">Reset</button>
+    </div>
+  </div>
+
+<script src="index.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+/*class to show and hide the number of products column*/
+.hidden{
+  visibility: hidden;
+  position: absolute;
+}
+
+body{
+background-color: #f4f6ff;
+}
+
+.calculator{
+background-color: #24a19c;
+border-radius: 35px;
+padding: 15px 40px;
+width: 500px;
+margin: 120px auto 20px auto;
+font-size: 18px;
+-webkit-box-shadow: 6px 11px 14px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 11px 14px -4px rgba(0,0,0,0.75);
+box-shadow: 6px 11px 14px -4px rgba(0,0,0,0.75);
+}
+
+.btn{
+  margin: 0px 5px 5px 5px;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #394989;
+
+}
+
+.inputField{
+border-radius: 5px;
+text-align: right;
+width: 130px;
+}
+
+.inputField2{
+border-radius: 5px;
+text-align: right;
+width: 130px;
+}
+
+.inputField3{
+border-radius: 5px;
+text-align: right;
+width: 130px;
+}
+
+.outputField{
+  margin-left: 10px;
+}
