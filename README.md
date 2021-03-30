@@ -2,7 +2,7 @@
 
 This is my first ever JavaScript application that I built last summer. 
 
-The main goal was to put my basic JavaScript skills and DOM manipulation into practice. I also used bootstrapt to create the dropdown navbar.
+The main goal was to put my, at that time, basic JavaScript skills and DOM manipulation into practice. I also used bootstrapt to create the dropdown navbar.
 
 I built this application to use in my previous job as a customer service agent. 
 
